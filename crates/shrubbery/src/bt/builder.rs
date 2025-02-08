@@ -1,7 +1,3 @@
-/* Copyright (C) 2023 Admix Pty. Ltd. - All Rights Reserved.
-Unauthorized copying of this file, via any medium is strictly prohibited.
-Proprietary and confidential. */
-
 use crate::bt::ShrubberyBT;
 use crate::control::builder::{CTreeBuilder, CTreeLayerBuilder};
 use crate::control::{CTreeNodeID, LeafNode, ROOT_ID};

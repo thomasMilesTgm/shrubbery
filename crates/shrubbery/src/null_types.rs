@@ -1,7 +1,3 @@
-/* Copyright (C) 2023 Admix Pty. Ltd. - All Rights Reserved.
-Unauthorized copying of this file, via any medium is strictly prohibited.
-Proprietary and confidential. */
-
 //! Null types for making bts that don't do anything for testing purposes
 
 use crate::prelude::*;

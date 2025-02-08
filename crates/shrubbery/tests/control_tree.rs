@@ -1,7 +1,3 @@
-/* Copyright (C) 2023 Admix Pty. Ltd. - All Rights Reserved.
-Unauthorized copying of this file, via any medium is strictly prohibited.
-Proprietary and confidential. */
-
 use ahash::HashSet;
 use shrubbery::control::control_nodes::ControlNode as CNode;
 use shrubbery::control::decorators::StandardDecorator;

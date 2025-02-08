@@ -1,7 +1,3 @@
-/* Copyright (C) 2023 Admix Pty. Ltd. - All Rights Reserved.
-Unauthorized copying of this file, via any medium is strictly prohibited.
-Proprietary and confidential. */
-
 //! # Connects [`LeafNode(s)`](crate::control::LeafNode) to [`Executor`] & [`Conditional`]
 //! implementations.
 
