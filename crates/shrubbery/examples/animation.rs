@@ -266,4 +266,8 @@ fn main() {
     bt.save_dot("bt_builder");
     let mut bb = BB::default();
     bt.run_save_animation(&mut bb, "bt_builder", 0.5);
+    let wd = std::env::current_dir().unwrap();
+    let html_path = format!("file://{}/out/bt_builder.html", wd.display());
+    println!("Open animation in browser at:");
+    println!("{html_path}");
 }
