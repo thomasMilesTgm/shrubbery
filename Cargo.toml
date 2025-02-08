@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+
+members = [
+  "crates/*",
+]
+
+default_members = [
+  "crates/shrubbery",
+]
+
+[workspace.dependencies]
+ahash = "0.8.3"
+derive_more = { version = "0.99.17", default-features = false, features = [
+  "deref",
+  "deref_mut",
+  "as_mut",
+  "as_ref",
+  "from",
+  "try_into",
+] }
+graphviz-rust = "0.9.0"
+log = "0.4.21"
+regex = "1.8.4"
+thiserror = "1.0.40"
