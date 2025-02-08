@@ -1,12 +1,12 @@
 [package]
 edition = "2021"
 name = "shrubbery"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 keywords = ["shrubbery", "behavior-tree", "ai"]
-documentation = "https://docs.rs/rayleigh"
-homepage = "https://github.com/thomasMilesTgm/rayleigh"
-repository = "https://github.com/thomasMilesTgm/rayleigh"
+documentation = "https://docs.rs/shrubbery"
+homepage = "https://github.com/thomasMilesTgm/shrubbery"
+repository = "https://github.com/thomasMilesTgm/shrubbery"
 readme = "README.md"
 workspace = "../../"
 description = "Composable Berhavior Trees"
