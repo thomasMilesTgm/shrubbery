@@ -1,8 +1,8 @@
 //! # Shrubbery
 //!
-//! <img src="../../../bt/crates/shrubbery/doc/shrub-dark.gif" alt="sample bt" />
+//! <img src="../../../crates/shrubbery/doc/shrub-dark.gif" alt="sample bt" />
 //!
-//! <img src="../../../bt/crates/shrubbery/doc/shrubbery.jpg" alt="it is a good shrubbery" />
+//! <img src="../../../crates/shrubbery/doc/shrubbery.jpg" alt="it is a good shrubbery" />
 //!
 //! ## Motivation
 //!
@@ -60,7 +60,7 @@
 //! A nicely formatted graphviz tree goes a long way to make it easy to parse what is going on &
 //! there are a standard set of symbols typically used to do so:
 //!
-//! <img src="../../../bt/crates/shrubbery/doc/sample_bt.png" alt="sample bt" />
+//! <img src="../../../crates/shrubbery/doc/sample_bt.png" alt="sample bt" />
 //!
 //! Petgraphs' `Dot` implementation isn't great since you can't style nodes differently and it relies
 //! purely on the implementation of [`std::fmt::Debug`] (something very useless if your nodes are ids),
