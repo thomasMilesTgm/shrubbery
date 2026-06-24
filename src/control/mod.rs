@@ -413,7 +413,7 @@ impl<D: Decorator> ControlTree<D> {
         &'a mut self,
         node_id: &CTreeNodeID,
         mut f: impl FnMut(&mut CTreeNode<D>) -> O + 'a,
-    ) -> impl Iterator<Item = O> + '_ {
+    ) -> impl Iterator<Item = O> + 'a {
         self.tree[node_id]
             .clone()
             .into_iter()
