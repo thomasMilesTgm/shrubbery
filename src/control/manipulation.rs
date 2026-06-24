@@ -75,9 +75,9 @@ impl<D: Decorator> ControlTree<D> {
 
         self.recurse_children_check_cycles(parent_id, vec![])
             .map(|_| id)
-            .map_err(|e| {
+            .inspect_err(|e| {
+                log::error!("{e}");
                 self.remove(id);
-                e
             })
     }
 

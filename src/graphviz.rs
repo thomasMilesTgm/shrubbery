@@ -102,11 +102,14 @@ impl GraphvizAnimator {
         // html
         buf.push_str("<body>\n");
         buf.push_str("<svg width=\"100%\" height=\"100%\">");
+
+        let regex = regex::Regex::new(r"<[/]?svg[^>]*>").unwrap();
+
         for frame in frames {
             // graphviz outputs a <svg> for each frame, we don't want that, just the inner stuff
-            let strip_svg = regex::Regex::new(r"<[/]?svg[^>]*>")
-                .unwrap()
+            let strip_svg = regex
                 .replace_all(&frame, "");
+
             buf.push_str(&strip_svg);
         }
         buf.push_str("</svg>\n");

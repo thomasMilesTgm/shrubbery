@@ -217,11 +217,7 @@ impl<D: Decorator> ControlTree<D> {
     pub(crate) fn check_for_cycles(&self) -> ShrubberyResult<()> {
         if let Some(err) = self.iter_tree().find_map(|(&parent, children)| {
             children.iter().find_map(|&child| {
-                if let Err(e) = self.recurse_children_check_cycles(child, vec![parent]) {
-                    Some(e)
-                } else {
-                    None
-                }
+                self.recurse_children_check_cycles(child, vec![parent]).err()
             })
         }) {
             Err(err)
@@ -265,12 +261,11 @@ impl<D: Decorator> ControlTree<D> {
         from: CTreeNodeID,
         mut history: Vec<CTreeNodeID>,
     ) -> ShrubberyResult<()> {
-        if let Some(first) = history.first() {
-            if first == &from {
+        if let Some(first) = history.first()
+            && first == &from {
                 history.push(*first);
                 return Err(ShrubberyError::CycleDetected(history));
             }
-        }
         history.push(from);
         let children = self.children(&from);
         for child in children {

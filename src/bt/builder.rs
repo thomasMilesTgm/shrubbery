@@ -61,7 +61,7 @@ impl<H: ActionHandler, D: Decorator> BTBuilder<H, D> {
 
         Ok(ShrubberyBT {
             control_tree,
-            dispatch: self.dispatch.into(),
+            dispatch: self.dispatch,
         })
     }
 
@@ -184,7 +184,7 @@ impl<'a, H: ActionHandler, D: Decorator> BTLayer<'a, H, D> {
         let next_layer = self.control.next_layer(node);
         layer_fn(BTLayer {
             control: next_layer,
-            dispatch: &mut self.dispatch,
+            dispatch: self.dispatch,
         })
     }
 
@@ -199,7 +199,7 @@ impl<'a, H: ActionHandler, D: Decorator> BTLayer<'a, H, D> {
             deps,
             BTLayer {
                 control: next_layer,
-                dispatch: &mut self.dispatch,
+                dispatch: self.dispatch,
             },
         )
     }
