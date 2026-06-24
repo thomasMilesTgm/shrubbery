@@ -1,8 +1,8 @@
 # Shrubbery
 
-![animation](https://github.com/thomasMilesTgm/shrubbery/blob/main/crates/shrubbery/doc/shrub-dark.gif?raw=true)
+![animation](https://github.com/thomasMilesTgm/shrubbery/blob/f22ac896cb1f3fa8a633f62e8a5339c7e15c1fdf/doc/shrub-dark.gif)
 
-![it is a good shrubbery](https://github.com/thomasMilesTgm/shrubbery/blob/main/crates/shrubbery/doc/shrubbery.jpg?raw=true)
+![it is a good shrubbery](https://github.com/thomasMilesTgm/shrubbery/blob/f22ac896cb1f3fa8a633f62e8a5339c7e15c1fdf/doc/shrubbery.jpg)
 
 ## Motivation
 
@@ -60,7 +60,7 @@ lot easier with the ability to look at the tree itself.
 A nicely formatted graphviz tree goes a long way to make it easy to parse what is going on &
 there are a standard set of symbols typically used to do so:
 
-![sample bt](https://github.com/thomasMilesTgm/shrubbery/blob/main/crates/shrubbery/doc/sample_bt.png?raw=true)
+![sample bt](https://github.com/thomasMilesTgm/shrubbery/blob/f22ac896cb1f3fa8a633f62e8a5339c7e15c1fdf/doc/sample_bt.png)
 
 Petgraphs' `Dot` implementation isn't great since you can't style nodes differently and it relies
 purely on the implementation of [`std::fmt::Debug`] (something very useless if your nodes are ids),
