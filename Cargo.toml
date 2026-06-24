@@ -1,15 +1,16 @@
-[workspace]
-resolver = "2"
+[package]
+edition = "2024"
+name = "shrubbery"
+version = "0.1.2"
+license = "MIT"
+keywords = ["shrubbery", "behavior-tree", "ai"]
+documentation = "https://docs.rs/shrubbery"
+homepage = "https://github.com/thomasMilesTgm/shrubbery"
+repository = "https://github.com/thomasMilesTgm/shrubbery"
+readme = "README.md"
+description = "Composable Berhavior Trees"
 
-members = [
-  "crates/*",
-]
-
-default_members = [
-  "crates/shrubbery",
-]
-
-[workspace.dependencies]
+[dependencies]
 ahash = "0.8.3"
 derive_more = { version = "0.99.17", default-features = false, features = [
   "deref",
